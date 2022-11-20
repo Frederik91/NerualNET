@@ -10,9 +10,9 @@ namespace NeuralNET
             Biases = np.zeros((1, neuronCount));
         }
 
-        public NDArray Weights { get; }
+        public NDArray Weights { get; set;}
         public NDArray? Output { get; private set; }
-        public NDArray Biases { get; }
+        public NDArray Biases { get;set; }
 
         public void Forward(NDArray input)
         {

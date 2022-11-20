@@ -4,10 +4,10 @@ namespace NeuralNET;
 
 public class ActivationReLU : IActivation
 {
-    public NDArray? Output { get; private set; }
+    public NDArray? Outputs { get; private set; }
 
     public void Forward(NDArray inputs)
     {
-        Output = np.maximum(0.0, inputs);
+        Outputs = np.maximum(0.0, inputs);
     }
 }

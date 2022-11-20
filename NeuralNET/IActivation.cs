@@ -4,6 +4,6 @@ namespace NeuralNET;
 
 public interface IActivation
 {
-    NDArray? Output { get; }
+    NDArray? Outputs { get; }
     void Forward(NDArray inputs);
 }
